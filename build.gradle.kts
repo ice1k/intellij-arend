@@ -63,7 +63,8 @@ tasks {
 }
 
 intellij {
-    version.set("2022.1")
+    // version.set("2022.1")
+    localPath.set(property("localPath").toString())
     pluginName.set("Arend")
     updateSinceUntilBuild.set(true)
     instrumentCode.set(true)
